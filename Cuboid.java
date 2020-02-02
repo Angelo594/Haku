@@ -104,7 +104,7 @@ public class Cuboid{
     }
 
     public boolean fitsInto(Cuboid cub){
-        return this.a < cub.a && this.b < cub.b && this.c < cub.c;
+        return this.a > cub.a && this.b > cub.b && this.c > cub.c;
     }
 
     static int get_Count(){
